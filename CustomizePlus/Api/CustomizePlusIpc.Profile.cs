@@ -78,7 +78,7 @@ public partial class CustomizePlusIpc
         if (uniqueId == Guid.Empty)
             return ((int)ErrorCode.ProfileNotFound, null);
 
-        var profile = _profileManager.Profiles.Where(x => x.UniqueId == uniqueId && !x.IsTemporary).FirstOrDefault(); //todo: move into profile manager
+        var profile = _profileManager.Profiles.Where(x => x.UniqueId == uniqueId /*&& !x.IsTemporary*/).FirstOrDefault(); //todo: move into profile manager
 
         if (profile == null)
             return ((int)ErrorCode.ProfileNotFound, null);

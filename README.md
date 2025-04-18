@@ -4,7 +4,7 @@ Customize+ is a Dalamud plugin designed to give you better control over your Fin
 ## Installing
 **Do not use repo.json from this repository**
 
-Add [Aether Tools](https://github.com/Aether-Tools/DalamudPlugins) or [Sea of Stars](https://github.com/Ottermandias/SeaOfStars) dalamud repository by following instructions on the respective pages. 
+Add [Aether Tools](https://github.com/aniachan/DalamudPlugins) or [Sea of Stars](https://github.com/Ottermandias/SeaOfStars) dalamud repository by following instructions on the respective pages. 
 
 Then search for Customize+ in the plugin manager.
 
@@ -16,7 +16,7 @@ Please ask your question at support discord server run by our community: [Aether
 ### How do I report a bug in Customize+ or leave a suggestion?
 First we ask you join [Aetherworks Discord server](https://discord.gg/KvGJCCnG8t) and consult with community support team about your issue first. It's highly likely that you are not experiencing a bug in Customize+.
 
-Before reporting bug or leaving a suggestion in this GitHub you need to **carefully** read [issue creation guidelines](https://github.com/Aether-Tools/CustomizePlus/issues/11).
+Before reporting bug or leaving a suggestion in this GitHub you need to **carefully** read [issue creation guidelines](https://github.com/aniachan/CustomizePlus/issues/11).
 
 ### When will Customize+ be updated?
 The updates are released when someone decides to contribute new feature or fix some bug. Please understand that real life and paid employment take priority over this project.

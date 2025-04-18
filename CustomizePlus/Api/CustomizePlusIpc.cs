@@ -11,6 +11,7 @@ using ECommonsLite.EzIpcManager;
 using OtterGui.Log;
 using System;
 using Penumbra.GameData.Actors;
+using CustomizePlus.Templates;
 
 namespace CustomizePlus.Api;
 
@@ -28,6 +29,7 @@ public partial class CustomizePlusIpc : IDisposable
     private readonly HookingService _hookingService;
     private readonly ProfileManager _profileManager;
     private readonly ActorManager _actorManager;
+    private readonly TemplateManager _templateManager;
     private readonly GameObjectService _gameObjectService;
     private readonly ProfileFileSystem _profileFileSystem;
     private readonly CutsceneService _cutsceneService;
@@ -46,6 +48,7 @@ public partial class CustomizePlusIpc : IDisposable
         HookingService hookingService,
         ProfileManager profileManager,
         ActorManager actorManager,
+        TemplateManager templateManager,
         GameObjectService gameObjectService,
         ProfileFileSystem profileFileSystem,
         CutsceneService cutsceneService,
@@ -57,6 +60,7 @@ public partial class CustomizePlusIpc : IDisposable
         _hookingService = hookingService;
         _profileManager = profileManager;
         _actorManager = actorManager;
+        _templateManager = templateManager;
         _gameObjectService = gameObjectService;
         _profileFileSystem = profileFileSystem;
         _cutsceneService = cutsceneService;
