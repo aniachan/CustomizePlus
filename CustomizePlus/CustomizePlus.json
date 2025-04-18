@@ -1,6 +1,6 @@
-{
-	"Author": "Risa and Contributors",
-	"Name": "Customize+",
+﻿{
+    "Author": "Risa (patches by aniachan)",
+	"Name": "Customize+ (aniachan ver)",
 	"Punchline": "Customize your character beyond FFXIV's limitations.",
 	"Description": "A plugin that allows you to customize your character beyond FFXIV limitations by directly editing bone parameters.",
 	"InternalName": "CustomizePlus",
@@ -14,5 +14,5 @@
 		"Character"
 	],
 	"ImageUrls": null,
-	"IconUrl": "https://raw.githubusercontent.com/Aether-Tools/CustomizePlus/main/Data/icon.png"
+	"IconUrl": "https://raw.githubusercontent.com/aniachan/CustomizePlus/main/Data/icon.png"
 }

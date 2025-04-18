@@ -1,7 +1,7 @@
 # Customize+
 Customize+ is a Dalamud plugin designed to give you better control over your Final Fantasy XIV character appearance. Namely it allows you to apply character bone manipulations during gameplay.
 
-### <center>[FAQ](https://github.com/Aether-Tools/CustomizePlus/blob/main/docs/FAQ.md) | [Support Discord](https://discord.gg/KvGJCCnG8t) | [Contributing](https://github.com/Aether-Tools/CustomizePlus/blob/main/docs/CONTRIBUTING.md) | [Changelog for external tool developers](https://github.com/Aether-Tools/CustomizePlus/blob/main/docs/DEVELOPER_CHANGELOG.md)</center>
+### <center>[FAQ](https://github.com/aniachan/CustomizePlus/blob/main/docs/FAQ.md) | [Support Discord](https://discord.gg/KvGJCCnG8t) | [Contributing](https://github.com/aniachan/CustomizePlus/blob/main/docs/CONTRIBUTING.md) | [Changelog for external tool developers](https://github.com/aniachan/CustomizePlus/blob/main/docs/DEVELOPER_CHANGELOG.md)</center>
 
 ## I need help with using Customize+!
 Please check FAQ and, if needed, ask your question in support discord server run by our community: [Aetherworks](https://discord.gg/KvGJCCnG8t).
@@ -10,7 +10,7 @@ Please check FAQ and, if needed, ask your question in support discord server run
 
 **Consult with community support team over at Discord before creating an issue in this repository.**
 
-**Before reporting bug or leaving a suggestion in this GitHub you need to **carefully** read [issue creation guidelines](https://github.com/Aether-Tools/CustomizePlus/issues/11).**
+**Before reporting bug or leaving a suggestion in this GitHub you need to **carefully** read [issue creation guidelines](https://github.com/aniachan/CustomizePlus/issues/11).**
 
 ## Installing
 **Do not use repo.json from this repository**

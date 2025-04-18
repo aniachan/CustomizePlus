@@ -7,6 +7,7 @@ using CustomizePlus.Templates.Events;
 using Dalamud.Plugin;
 using ECommonsLite.EzIpcManager;
 using Penumbra.GameData.Actors;
+using CustomizePlus.Templates;
 
 namespace CustomizePlus.Api;
 
@@ -24,6 +25,7 @@ public partial class CustomizePlusIpc : IDisposable
     private readonly HookingService _hookingService;
     private readonly ProfileManager _profileManager;
     private readonly ActorManager _actorManager;
+    private readonly TemplateManager _templateManager;
     private readonly GameObjectService _gameObjectService;
     private readonly CutsceneService _cutsceneService;
 
@@ -41,6 +43,7 @@ public partial class CustomizePlusIpc : IDisposable
         HookingService hookingService,
         ProfileManager profileManager,
         ActorManager actorManager,
+        TemplateManager templateManager,
         GameObjectService gameObjectService,
         CutsceneService cutsceneService,
         ArmatureChanged armatureChangedEvent,
@@ -51,6 +54,7 @@ public partial class CustomizePlusIpc : IDisposable
         _hookingService = hookingService;
         _profileManager = profileManager;
         _actorManager = actorManager;
+        _templateManager = templateManager;
         _gameObjectService = gameObjectService;
         _cutsceneService = cutsceneService;
 
