@@ -446,7 +446,7 @@ public partial class ProfileManager : IDisposable
         if (actorIdentifier.Type == IdentifierType.Owned && !actorIdentifier.IsOwnedByLocalPlayer())
             return null;
 
-        var query = Profiles.Where(p => p.Characters.Any(x => x.MatchesIgnoringOwnership(actorIdentifier)) && !p.IsTemporary && p.Enabled);
+        var query = Profiles.Where(p => p.Characters.Any(x => x.MatchesIgnoringOwnership(actorIdentifier)) && /*!p.IsTemporary &&*/ p.Enabled);
 
         var profile = query.OrderByDescending(x => x.Priority).FirstOrDefault();
 
