@@ -1,7 +1,7 @@
 [
   {
-    "Author": "Risa",
-    "Name": "Customize+",
+    "Author": "Risa (patches by aniachan)",
+    "Name": "Customize+ (aniachan ver)",
     "Description": "A plugin that allows you to customize your character beyond FFXIV limitations by directly editing bone parameters.",
     "Punchline": "Customize your character beyond FFXIV's limitations.",
     "InternalName": "CustomizePlus",
