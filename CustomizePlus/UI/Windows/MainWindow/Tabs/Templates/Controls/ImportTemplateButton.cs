@@ -1,4 +1,5 @@
-﻿using CustomizePlus.Configuration.Data.Version2;
+﻿using CustomizePlus.Api.Data;
+using CustomizePlus.Configuration.Data.Version2;
 using CustomizePlus.Configuration.Data.Version3;
 using CustomizePlus.Configuration.Helpers;
 using CustomizePlus.Core.Data;
@@ -64,6 +65,11 @@ public sealed class ImportTemplateButton(
                 _ => null
             };
 
+            // Clipboard data may also be a plain (non-compressed) base64 JSON payload,
+            // e.g. the IPCCharacterProfile JSON returned by Profile.GetByUniqueId and
+            // copied to clipboard by other plugins such as xivclone.
+            template ??= GetTemplateFromPlainBase64(_clipboardText);
+
             if (template is Template tpl && tpl != null)
 
             {
@@ -113,6 +119,34 @@ public sealed class ImportTemplateButton(
 
             if (template != null)
                 return template;
+        }
+
+        return null;
+    }
+
+    /// <summary>
+    /// Fallback for clipboard payloads that are plain (non-gzip) base64 JSON,
+    /// matching the format used by the Template.Import and Profile.GetByUniqueId
+    /// IPC endpoints. Tries a direct template deserialization first, then an
+    /// IPCCharacterProfile-shaped payload.
+    /// </summary>
+    private Template? GetTemplateFromPlainBase64(string base64)
+    {
+        try
+        {
+            var json = System.Text.Encoding.UTF8.GetString(Convert.FromBase64String(base64.Trim()));
+
+            var template = JsonConvert.DeserializeObject<Template>(json);
+            if (template != null && template.Bones.Count > 0)
+                return template;
+
+            var ipcProfile = JsonConvert.DeserializeObject<IPCCharacterProfile>(json);
+            if (ipcProfile != null && ipcProfile.Bones.Count > 0)
+                return new Template(ipcProfile);
+        }
+        catch
+        {
+            // Not plain base64 JSON either; caller will show the unsupported popup.
         }
 
         return null;
